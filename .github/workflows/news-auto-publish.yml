@@ -27,7 +27,6 @@ jobs:
     - name: Run News Bot
       env:
         WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
-        WECHAT_SECRET: ${{ secrets.WECHAT_SECRET }}
-        NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        WECHAT_SECRET: ${{ secrets.WECHAT_SECRET }
         TIANAPI_KEY: ${{ secrets.TIANAPI_KEY }} 
       run: python news_bot.py
