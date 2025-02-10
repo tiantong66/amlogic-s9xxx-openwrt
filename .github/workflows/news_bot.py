@@ -8,7 +8,7 @@ news_api_key = os.environ.get('NEWS_API_KEY')
 
 # 获取新闻（示例使用NewsAPI）
 def fetch_news():
-    url = f"https://newsapi.org/v2/top-headlines?country=us&apiKey={news_api_key}"
+    url = f"https://apis.tianapi.com/toutiaohot/index?apiKey={news_api_key}"
     response = requests.get(url)
     return response.json()['articles'][:5]  # 取前5条新闻
 
