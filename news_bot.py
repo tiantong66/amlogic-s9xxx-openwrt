@@ -9,7 +9,7 @@ tianapi_key = os.environ.get('TIANAPI_KEY')
 
 def fetch_tianapi_news():
     # 天行API示例（通用新闻接口）
-    url = "http://api.tianapi.com/generalnews/index"
+    url = "https://apis.tianapi.com/toutiaohot/index"
     params = {
         "key": tianapi_key,
         "num": 10,  # 获取10条新闻
